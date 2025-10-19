@@ -34,7 +34,7 @@ class SeasonalButton extends HTMLElement {
 
     // Add click handling
     button.addEventListener('click', () => {
-      const onclickAttr = this.getAttribute('onclick');
+      const onclickAttr = this.getAttribute('click');
       if (onclickAttr) {
         new Function(onclickAttr)();
       }
